@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Error Styles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="padding: 40px; background: #051326;">
+
+    <h2 style="color: white; margin-bottom: 20px;">Test Project Input Error</h2>
+    <div class="project-form">
+        <input type="text" class="project-input" id="test-input-1" placeholder="Phone Number">
+        <button class="project-btn" onclick="toggleError1()">Toggle Error</button>
+    </div>
+
+    <h2 style="color: white; margin: 40px 0 20px;">Test Footer Input Error</h2>
+    <div style="background: white; padding: 20px; border-radius: 12px;">
+        <div class="footer__form">
+            <input type="text" class="footer__input" id="test-input-2" placeholder="Phone Number">
+            <button class="footer__button" onclick="toggleError2()">Toggle Error</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleError1() {
+            const input = document.getElementById('test-input-1');
+            input.classList.toggle('error');
+            console.log('Project input error toggled. Has error class:', input.classList.contains('error'));
+        }
+
+        function toggleError2() {
+            const input = document.getElementById('test-input-2');
+            input.classList.toggle('error');
+            console.log('Footer input error toggled. Has error class:', input.classList.contains('error'));
+        }
+    </script>
+</body>
+
+</html>
