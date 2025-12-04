@@ -69,13 +69,18 @@ body {
 
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1680px;
+    width: 1680px;
+    height: 936px;
     margin: 0 auto;
-    padding: 120px 120px 120px 0;
+    display: flex;
     gap: 80px;
+    justify-content: space-between;
+    background-image: url(img/grant-lemons-jTCLppdwSEc-unsplash\ 1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    align-items: center;
+    padding: 120px 120px 120px 0;
 }
 
 
