@@ -1462,21 +1462,10 @@ body {
     line-height: 20px;
 }
 
-.footer__socials-title {
-    display: flex;
-    align-items: center;
-    margin-top: 54px;
-}
-
-.footer__socials-title img {
-    display: block;
-    width: auto;
-    height: auto;
-}
-
 .footer__socials {
     display: flex;
-    gap: 12px;
+    gap: 16px;
+    margin-top: 54px;
 }
 
 .footer__social {
